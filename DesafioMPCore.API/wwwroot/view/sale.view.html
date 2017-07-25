@@ -1,0 +1,75 @@
+<!--<div class="col-md-12 col-lg-12">-->
+<div class="row" class="col-sm-12">
+    <h3> Comprar </h3>
+<form name="form" class="form-horizontal" ng-init="ctrl.verifyRequiredData()">
+
+    <div class="row">
+    <div class="form-group">
+        <div class="col-sm-6">
+            <lable for="buyerName">Nome</lable>
+            <input type="text" name="buyerName" required="required" ng-model="ctrl.creditCard.buyerName" class="form-control" placeholder="Nome Completo"/> 
+        </div>
+        <div class="col-sm-6">
+            <lable for="buyerEmail">E-mail</lable>
+            <input type="text" name="buyerEmail" required="required" value="email@email.com" ng-model="ctrl.creditCard.buyerEmail" class="form-control" placeholder="E-mail"/> 
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-sm-2">
+                <lable for="creditCardBrand">Bandeira</lable>
+                <select name="creditCardBrand" id="creditCardBrand" ng-model="ctrl.creditCard.creditCardBrand" class="form-control" required="required">
+                    <option value="visa">Visa</option>
+                    <option value="master">Master Card</option>
+                </select> <br />
+            </div>
+            <div class="col-sm-10">
+                <lable for="creditCardNumber">Número Cartão Crédito</lable>
+                <input type="text" name="creditCardNumber" ng-model="ctrl.creditCard.creditCardNumber" class="form-control"/> 
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-sm-2">
+                <lable for="securityCode">Código CVV</lable>
+                <input type="text" name="securityCode" ng-model="ctrl.creditCard.securityCode" class="form-control" maxlength="3"/> <br />
+            </div>
+            <div class="col-sm-10">
+                <lable for="holderName">Nome Impresso no Cartão</lable>
+                <input type="text" name="holderName" ng-model="ctrl.creditCard.holderName" class="form-control"/> 
+            </div>
+        </div>
+    </div>            
+
+    <div class="row">
+        <div class="form-group">
+            <div class="col-sm-2">
+                <lable for="expMonth">Mês De Validade</lable>
+                <input type="text" id="expMonth" ng-model="ctrl.creditCard.expMonth" class="form-control"/> <br />
+            </div>
+            <div class="col-sm-3">
+                <lable for="holderName">Ano De Validade</lable>
+                <input type="text" id="expYear" ng-model="ctrl.creditCard.expYear" class="form-control"/> <br />
+            </div>
+            <div class="col-sm-7">
+                <lable for="ammount">Valor da Compra</lable>
+                <input type="text" name="ammount" ng-model="ctrl.creditCard.ammount" class="form-control"/> <br />
+            </div>
+        </div>
+    </div> 
+    <div class="row">
+        <div class="form-group">
+            <div class="col-sm-5">
+                <a href="#!/merchant" type="reset" value="Limpar" class="btn btn-default" class="form-control"> Voltar </a>
+            </div>
+            <div class="col-sm-7">
+              <input type="button" ng-click="ctrl.postSale(ctrl.creditCard)" value="Comprar" class="btn btn-primary form-control"/>
+            </div>            
+        </div>
+    </div>
+
+    <br><br>
+</form>
+</div>

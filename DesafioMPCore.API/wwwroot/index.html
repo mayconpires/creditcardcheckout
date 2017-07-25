@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html ng-app="mpdesafio">
+<head>
+    <meta charset="utf-8" />
+    <title>Mundi Pagg - Desafio - Maycon Pires</title>
+    <!--<link href="vendor/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/mp.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="page">
+        <header class="container"> 
+            <div id="menu" class="navbar navbar-inverse ">
+                <div class="navbar-header ">
+                    <button class="btn btn-primary navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="glyphicon glyphicon-chevron-down"> </span>
+                    </button>
+                    <div id="logo">
+                        <img src="image/logo-header-mundipagg-2.png" width="93px" />
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav"><a href="#!/accesstoken"> Acesso </a></li>
+                        <li class="nav"><a href="#!/merchant"> Lojas </a></li>
+                        <li class="nav"><a href="#!/sale"> Comprar </a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </header>
+        <section id="body" class="container" > 
+            <section id="main" class="container col-md-8" > 
+                <div ng-view></div>
+            </section>
+         </section>
+        <footer class="container footer">
+            <p class="text-muted center-text">MundiPagg Desafio Técnico - Maycon Pires - 2017</p>
+        </footer>
+    </div>
+
+    <!--bower_components-->
+    <script src="./vendor/bower_components/angular/angular.js"></script>
+    <script src="./vendor/bower_components/angular-route/angular-route.js"></script>
+    <!--modulo-->
+    <script src="./mp.module.js"></script>
+
+    <!--models-->
+    <script src="./model/user.model.js"></script>
+    <script src="./model/token.model.js"></script>
+    <script src="./model/merchant.model.js"></script>
+    <script src="./model/creditcardtransaction.model.js"></script>
+    <script src="./model/creditcardsaleresponse.model.js"></script>
+
+    <!--services-->
+    <script src="./service/gateway.serv.js"></script>
+
+    <!--controllers-->
+    <script src="./controller/accesstoken.ctrl.js"></script>
+    <script src="./controller/merchant.ctrl.js"></script>
+    <script src="./controller/sale.ctrl.js"></script>
+    <script src="vendor/bower_components/jquery/dist/jquery.min.js"></script>    
+    <script src="vendor/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

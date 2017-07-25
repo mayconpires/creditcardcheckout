@@ -1,0 +1,9 @@
+C:\MP\Estudos\DESAFIO\DesafioMPCore\DesafioMPCore.Domain\bin\Debug\netcoreapp1.1\DesafioMPCore.Domain.deps.json
+C:\MP\Estudos\DESAFIO\DesafioMPCore\DesafioMPCore.Domain\bin\Debug\netcoreapp1.1\DesafioMPCore.Domain.dll
+C:\MP\Estudos\DESAFIO\DesafioMPCore\DesafioMPCore.Domain\bin\Debug\netcoreapp1.1\DesafioMPCore.Domain.pdb
+C:\MP\Estudos\DESAFIO\DesafioMPCore\DesafioMPCore.Domain\bin\Debug\netcoreapp1.1\DesafioMPCore.Infra.dll
+C:\MP\Estudos\DESAFIO\DesafioMPCore\DesafioMPCore.Domain\bin\Debug\netcoreapp1.1\DesafioMPCore.Infra.pdb
+C:\MP\Estudos\DESAFIO\DesafioMPCore\DesafioMPCore.Domain\obj\Debug\netcoreapp1.1\DesafioMPCore.Domain.csprojResolveAssemblyReference.cache
+C:\MP\Estudos\DESAFIO\DesafioMPCore\DesafioMPCore.Domain\obj\Debug\netcoreapp1.1\DesafioMPCore.Domain.AssemblyInfo.cs
+C:\MP\Estudos\DESAFIO\DesafioMPCore\DesafioMPCore.Domain\obj\Debug\netcoreapp1.1\DesafioMPCore.Domain.dll
+C:\MP\Estudos\DESAFIO\DesafioMPCore\DesafioMPCore.Domain\obj\Debug\netcoreapp1.1\DesafioMPCore.Domain.pdb
