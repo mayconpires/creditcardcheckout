@@ -1,0 +1,29 @@
+{
+  "name": "mpdesafio",
+  "authors": [
+    "mayconpires"
+  ],
+  "description": "Projeto front end para o desafio MundiPagg",
+  "main": "mp.module.js",
+  "keywords": [
+    "mundipagg",
+    "mayconpires"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "../wwwroot/vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.5",
+    "angular-route": "^1.6.5",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}

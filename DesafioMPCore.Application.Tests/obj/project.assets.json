@@ -2893,6 +2893,12 @@
           "DesafioMPCore.Infra": "1.0.0",
           "Microsoft.NETCore.App": "1.1.1",
           "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Application.dll": {}
         }
       },
       "DesafioMPCore.Domain/1.0.0": {
@@ -2901,6 +2907,12 @@
         "dependencies": {
           "DesafioMPCore.Infra": "1.0.0",
           "Microsoft.NETCore.App": "1.1.1"
+        },
+        "compile": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Domain.dll": {}
         }
       },
       "DesafioMPCore.Infra/1.0.0": {
@@ -2909,6 +2921,12 @@
         "dependencies": {
           "AutoMapper": "6.1.1",
           "Microsoft.NETCore.App": "1.1.1"
+        },
+        "compile": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Infra.dll": {}
         }
       }
     }
@@ -8730,6 +8748,9 @@
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
+      "files": {
+        "lib/netcoreapp1.1/DesafioMPCore.Application.Tests.dll": "C:\\MP\\Estudos\\DESAFIO\\DesafioMPCore\\DesafioMPCore.Application.Tests\\bin\\placeholder\\netcoreapp1.1\\DesafioMPCore.Application.Tests.dll"
+      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
@@ -8746,26 +8767,25 @@
     "frameworks": {
       "netcoreapp1.1": {
         "dependencies": {
-          "MSTest.TestFramework": {
+          "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "1.1.11"
+            "version": "1.1.1"
           },
-          "MSTest.TestAdapter": {
+          "Microsoft.NET.Test.Sdk": {
             "target": "Package",
-            "version": "1.1.11"
+            "version": "15.0.0"
           },
           "Moq": {
             "target": "Package",
             "version": "4.7.99"
           },
-          "Microsoft.NETCore.App": {
+          "MSTest.TestAdapter": {
             "target": "Package",
-            "version": "1.1.1",
-            "autoReferenced": true
+            "version": "1.1.11"
           },
-          "Microsoft.NET.Test.Sdk": {
+          "MSTest.TestFramework": {
             "target": "Package",
-            "version": "15.0.0"
+            "version": "1.1.11"
           },
           "Newtonsoft.Json": {
             "target": "Package",

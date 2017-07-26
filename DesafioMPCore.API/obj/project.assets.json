@@ -4294,6 +4294,12 @@
           "DesafioMPCore.Infra": "1.0.0",
           "Microsoft.NETCore.App": "1.1.1",
           "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Application.dll": {}
         }
       },
       "DesafioMPCore.Domain/1.0.0": {
@@ -4302,6 +4308,12 @@
         "dependencies": {
           "DesafioMPCore.Infra": "1.0.0",
           "Microsoft.NETCore.App": "1.1.1"
+        },
+        "compile": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Domain.dll": {}
         }
       },
       "DesafioMPCore.Infra/1.0.0": {
@@ -4310,6 +4322,12 @@
         "dependencies": {
           "AutoMapper": "6.1.1",
           "Microsoft.NETCore.App": "1.1.1"
+        },
+        "compile": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Infra.dll": {}
         }
       }
     }
@@ -11190,6 +11208,9 @@
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
+      "files": {
+        "lib/netcoreapp1.1/DesafioMPCore.API.dll": "C:\\MP\\Estudos\\DESAFIO\\DesafioMPCore\\DesafioMPCore.API\\bin\\placeholder\\netcoreapp1.1\\DesafioMPCore.API.dll"
+      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
@@ -11209,40 +11230,7 @@
     "frameworks": {
       "netcoreapp1.1": {
         "dependencies": {
-          "Microsoft.AspNetCore": {
-            "target": "Package",
-            "version": "1.1.1"
-          },
-          "Microsoft.Extensions.Logging.Debug": {
-            "target": "Package",
-            "version": "1.1.1"
-          },
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-            "target": "Package",
-            "version": "1.1.0"
-          },
-          "Microsoft.EntityFrameworkCore.Design": {
-            "target": "Package",
-            "version": "1.1.1"
-          },
           "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "1.1.1",
-            "autoReferenced": true
-          },
-          "Microsoft.VisualStudio.Web.BrowserLink": {
-            "target": "Package",
-            "version": "1.1.0"
-          },
-          "Microsoft.AspNetCore.Mvc.Formatters.Xml": {
-            "target": "Package",
-            "version": "1.1.1"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "1.1.1"
           },
@@ -11250,7 +11238,15 @@
             "target": "Package",
             "version": "6.1.1"
           },
-          "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "2.0.1"
+          },
+          "Microsoft.ApplicationInsights.AspNetCore": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "Microsoft.AspNetCore": {
             "target": "Package",
             "version": "1.1.1"
           },
@@ -11258,13 +11254,37 @@
             "target": "Package",
             "version": "1.1.2"
           },
-          "Microsoft.ApplicationInsights.AspNetCore": {
+          "Microsoft.AspNetCore.Mvc.Formatters.Xml": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "1.1.1"
           },
           "Microsoft.AspNetCore.StaticFiles": {
             "target": "Package",
             "version": "1.1.1"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "target": "Package",
+            "version": "1.1.1"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "1.1.1"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+            "target": "Package",
+            "version": "1.1.1"
+          },
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "1.1.1"
+          },
+          "Microsoft.VisualStudio.Web.BrowserLink": {
+            "target": "Package",
+            "version": "1.1.0"
+          },
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "1.1.0"
           }
         },
         "imports": [

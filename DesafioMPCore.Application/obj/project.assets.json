@@ -2421,6 +2421,12 @@
         "dependencies": {
           "DesafioMPCore.Infra": "1.0.0",
           "Microsoft.NETCore.App": "1.1.1"
+        },
+        "compile": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Domain.dll": {}
         }
       },
       "DesafioMPCore.Infra/1.0.0": {
@@ -2429,6 +2435,12 @@
         "dependencies": {
           "AutoMapper": "6.1.1",
           "Microsoft.NETCore.App": "1.1.1"
+        },
+        "compile": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/netcoreapp1.1/DesafioMPCore.Infra.dll": {}
         }
       }
     }
@@ -7569,6 +7581,9 @@
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
+      "files": {
+        "lib/netcoreapp1.1/DesafioMPCore.Application.dll": "C:\\MP\\Estudos\\DESAFIO\\DesafioMPCore\\DesafioMPCore.Application\\bin\\placeholder\\netcoreapp1.1\\DesafioMPCore.Application.dll"
+      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
@@ -7587,8 +7602,7 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "1.1.1",
-            "autoReferenced": true
+            "version": "1.1.1"
           },
           "Newtonsoft.Json": {
             "target": "Package",

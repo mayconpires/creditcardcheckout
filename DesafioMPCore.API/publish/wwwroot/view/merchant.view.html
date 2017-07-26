@@ -1,0 +1,19 @@
+
+<h3>Lojas</h3>
+
+<div ng-init="ctrl.getMerchant()">
+    <table class="table table-striped table-hover">
+        <thead>
+            <th>Nome Corporativo</th>
+            <th>Merchant Key</th>
+            <th>Ativado</th>
+        </thead>
+        <tr ng-repeat="merchant in ctrl.merchants">
+            <td><a href="" ng-click="ctrl.openSale(merchant.merchantKey)">{{merchant.corporateName}}</a></td>
+            <td>{{merchant.merchantKey}}</td>
+            <td>{{merchant.isEnabled}}</td>
+        </tr>
+    <table>
+
+    <br><br>
+</div>

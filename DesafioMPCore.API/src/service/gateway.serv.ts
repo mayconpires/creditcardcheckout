@@ -24,34 +24,30 @@ module mpdesafio {
 
     export class GatewayService implements IGatewayService {
 
-        static $inject = ['$http'];
+        static $inject = ['$http', 'appConfig'];
         config: angular.IRequestShortcutConfig;
         userId: string;
         urlApi: string;
         merchantKey: string;
         creditCardSaleResponse: CreditCardSaleResponse;
 
-        constructor(private $http : ng.IHttpService) {
+        constructor(private $http : ng.IHttpService, private appConfig: any) {
             this.config =  {
                 headers: {
                     "Content-Type":"application/json"
                 }
             };
-            this.urlApi = "http://localhost:57881/api/";
+            this.urlApi =  appConfig.urlBase;
         }
 
         logIn = (user: User): ng.IPromise<any> => {
-            var config: angular.IRequestShortcutConfig = {
-                headers: {
-                    "Content-Type":"application/json"
-                }
-            }
-
-            return this.$http.post('http://localhost:57881/api/user/accesstoken', user, config );
+            var urlLogin = this.urlApi + "user/accesstoken";
+            
+            return this.$http.post(urlLogin, user, this.config );
         };
 
         seekMerchants = (): ng.IPromise<any> => {
-            var urlMerchant = "http://localhost:57881/api/merchants/" + this.userId;
+            var urlMerchant = this.urlApi + "merchants/" + this.userId;
             
             return this.$http.get(urlMerchant, this.config );
         };

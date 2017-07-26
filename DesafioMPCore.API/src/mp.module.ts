@@ -31,5 +31,10 @@
                 })
                 .otherwise({ redirectTo: '/accesstoken' })
             }
-        );
+        )
+        .constant('appConfig', {
+            urlBase: 'http://localhost:57881/api/'
+        });
+
+    
 }

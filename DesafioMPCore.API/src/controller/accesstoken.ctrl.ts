@@ -8,21 +8,20 @@ module mpdesafio {
     }
   
     export class AccessTokenCtrl implements IAccessTokenCtrl {
-        static $inject: any[] = ['gatewayService', '$location'];
+        static $inject: any[] = ['gatewayService', '$location', 'appConfig'];
         
-        constructor(private gatewayService: IGatewayService, private $location: ng.ILocationService) {
+        constructor(private gatewayService: IGatewayService, private $location: ng.ILocationService, private appConfig: any) {
         }
 
         user: User;
         token: Token;
         
         getAccessToken = (user: User) => {
-            console.log(user);
             this.gatewayService.logIn(user).then((data) => {
+                debugger;
                 if(data.status == 200) {
                     this.token = data.data;
                     this.gatewayService.setUserId(this.token.userId);
-                    console.log(data);
                     this.$location.path('/merchant');
                 } else {
                     alert('Credenciais inválidas.');
